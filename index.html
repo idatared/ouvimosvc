@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>DoAlto - Questionário</title>
+</head>
+<body>
+    <form action="https://api.sheetmonkey.io/form/qxdNrBR5JGHGF223YZ5MTt" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="input-box">
+          <label>Nome:</label>
+          <input type="text" placeholder="Se preferir, digite seu nome" name="Nome" required/>
+          <label>Telefone:</label>
+          <input type="tel" placeholder="Se preferir, digite seu telefone" name="Telefone" />
+          <label>E-mail:</label>
+          <input type="email" placeholder="Se preferir, digite seu e-mail" name="Email"/>
+        </div>
+      </fieldset>
+        
+        <fieldset>
+          <legend>Avaliação</legend>
+          <label for="estrelas">Na sua percepção, qual a avaliação do restaurante?</label>
+          <div class="rate">
+            <input type="radio" id="star5_1" name="estrelas" value="5" />
+            <label for="star5_1" title="5 estrelas">★</label>
+            <input type="radio" id="star4_1" name="estrelas" value="4" />
+            <label for="star4_1" title="4 estrelas">★</label>
+            <input type="radio" id="star3_1" name="estrelas" value="3" />
+            <label for="star3_1" title="3 estrelas">★</label>
+            <input type="radio" id="star2_1" name="estrelas" value="2" />
+            <label for="star2_1" title="2 estrelas">★</label>
+            <input type="radio" id="star1_1" name="estrelas" value="1" />
+            <label for="star1_1" title="1 estrela">★</label>
+          </div> <br> <br>
+        </fieldset>
+
+
+      <!--  
+          <fieldset id="perguntas-adicionais-nome" style="display: none;">
+          <legend>titulo</legend>
+          <label for="qualidade-nome">texto pergunta?</label> 
+          <input type="checkbox" id="qualidade-nome" name="qualidade-nome" value="valor" /> valor 
+
+          <label for="qualidade-nome"> 
+          <input type="checkbox" id="qualidade-nome" name="qualidade-nome" value="valor" /> valor <br>
+
+          <label for="qualidade-nome"> 
+          <input type="checkbox" id="qualidade-nome" name="qualidade-nome" value="valor" /> valor <br>
+      
+          </fieldset>
+  -->  
+
+      <fieldset id="perguntas-adicionais-produto" style="display: none;">
+      <legend>Qualidade do produto</legend>
+      <label for="qualidade-produto">Você não gostou de algum produto?</label> 
+      <input type="checkbox" id="qualidade-produto"name="qualidade-produto"value="Açai" /> Açai     
+
+      <label for="qualidade-produto"> 
+      <input type="checkbox" id="qualidade-produto" name="qualidade-produto" value="Tapioca/Crepioca/Omelete" /> Tapioca/Crepioca/Omelete <br>
+
+      <label for="qualidade-produto"> 
+      <input type="checkbox" id="qualidade-produto" name="qualidade-produto" value="Sanduíche" /> Sanduíche <br>
+
+      <label for="qualidade-produto"> 
+      <input type="checkbox" id="qualidade-produto" name="qualidade-produto" value="Salada" /> Salada <br>
+
+      <label for="qualidade-produto"> 
+      <input type="checkbox" id="qualidade-produto" name="qualidade-produto" value="Refeição" /> Refeição <br>
+
+      <label for="qualidade-produto"> 
+      <input type="checkbox" id="qualidade-produto" name="qualidade-produto" value="Bebidas" /> Bebidas <br>
+
+      <label for="qualidade-produto"> 
+      <input type="checkbox" id="qualidade-produto" name="qualidade-produto" value="Japonês" /> Japonês <br>
+
+      <label for="qualidade-produto"> 
+      <input type="checkbox" id="qualidade-produto" name="qualidade-produto" value="Estava tudo OK" /> Estava tudo OK <br>
+            
+    </fieldset>
+
+    <fieldset id="perguntas-adicionais-ambiente" style="display: none;">
+      <legend>Limpeza e organização da loja</legend>
+      <label for="qualidade-ambiente">O que houve?</label> 
+      <input type="checkbox" id="qualidade-ambiente" name="qualidade-ambiente" value="Ambiente desorganizado e sujo" /> Ambiente desorganizado e sujo <br>
+
+      <label for="qualidade-ambiente">
+      <input type="checkbox" id="qualidade-ambiente" name="qualidade-ambiente" value="Mesa que sentei desorganizada e suja" /> Mesa que sentei desorganizada e suja <br>
+
+      <label for="qualidade-ambiente">
+      <input type="checkbox" id="qualidade-ambiente" name="qualidade-ambiente" value="Banheiro desorganizado e sujo" /> Banheiro desorganizado e sujo <br>
+
+      <label for="qualidade-ambiente">
+      <input type="checkbox" id="qualidade-ambiente" name="qualidade-ambiente" value="Estava tudo OK" /> Estava tudo OK <br>
+
+    </fieldset>
+
+    
+    <fieldset id="perguntas-adicionais-atendimento" style="display: none;">
+      <legend>Atendimento e serviço</legend>
+      <label for="qualidade-atendimento">O que houve?</label> 
+      <input type="checkbox" id="qualidade-atendimento" name="qualidade-atendimento" value="Não fui bem atendido" /> Não fui bem atendido <br>
+
+      <label for="qqualidade-atendimento">
+      <input type="checkbox" id="qualidade-atendimento" name="qualidade-atendimento" value="Demorei a ser atendido" /> Demorei a ser atendido <br>
+
+      <label for="qqualidade-atendimento">
+      <input type="checkbox" id="qualidade-atendimento" name="qualidade-atendimento" value="Estava tudo OK" /> Estava tudo OK <br>
+      
+    </fieldset>
+
+    <fieldset id="perguntas-adicionais-tempo" style="display: none;">
+      <legend>Tempo de espera do pedido</legend>
+      <label for="qualidade-tempo">O que houve?</label> 
+      <input type="checkbox" id="qualidade-tempo" name="qualidade-tempo" value="Demorou um pouco" /> Demorou um pouco <br>
+
+      <label for="qualidade-tempo">
+      <input type="checkbox" id="qualidade-tempo" name="qualidade-tempo" value="Demorou muito" /> Demorou muito <br>
+
+      <label for="qualidade-tempo">
+      <input type="checkbox" id="qualidade-tempo" name="qualidade-tempo" value="Estava tudo OK" /> Estava tudo OK <br>
+          
+    </fieldset>
+
+    <fieldset id="perguntas-adicionais-preço" style="display: none;">
+      <legend>Preço</legend>
+      <label for="qualidade-preço">Preço de qual produto?</label> 
+      <input type="checkbox" id="qualidade-preço"name="qualidade-preço"value="Açai" /> Açai     
+
+      <label for="qualidade-preço"> 
+      <input type="checkbox" id="qualidade-preço" name="qualidade-preço" value="Tapioca/Crepioca/Omelete" /> Tapioca/Crepioca/Omelete <br>
+
+      <label for="qualidade-preço"> 
+      <input type="checkbox" id="qualidade-preço" name="qualidade-preço" value="Sanduíche" /> Sanduíche <br>
+
+      <label for="qualidade-preço"> 
+      <input type="checkbox" id="qualidade-preço" name=qualidade-preço" value="Salada" /> Salada <br>
+
+      <label for="qualidade-preço"> 
+      <input type="checkbox" id="qualidade-preço" name="qualidade-preço value="Refeição" /> Refeição <br>
+
+      <label for="qualidade-preço"> 
+      <input type="checkbox" id="qualidade-preço" name="qualidade-preço" value="Bebidas" /> Bebidas <br>
+
+      <label for="qualidade-preço"> 
+      <input type="checkbox" id="qualidade-preço" name="qualidade-preço" value="Japonês" /> Japonês <br>
+
+      <label for="qualidade-preço"> 
+        <input type="checkbox" id="qualidade-preço" name="qualidade-preço" value="Estava tudo OK" /> Estava tudo OK <br>
+            
+    </fieldset>
+
+    <fieldset id="perguntas-adicionais-sobre" style="display: none;">
+      <legend>Ambiente agradável</legend>
+      <label for="qualidade-sobre">O que houve?</label> 
+      <input type="checkbox" id="qualidade-sobre" name="qualidade-sobre" value="Temperatura da loja quente" /> Temperatura da loja quente <br>
+
+      <label for="qualidade-sobre">
+      <input type="checkbox" id="qualidade-sobre" name="qualidade-sobre" value="Iluminação fraca" /> Iluminação fraca <br>
+
+      <label for="qualidade-sobre">
+      <input type="checkbox" id="qualidade-sobre" name="qualidade-sobre" value="Música ruim" /> Música ruim <br>
+
+      <label for="qualidade-sobre">
+      <input type="checkbox" id="qualidade-sobre" name="qualidade-sobre" value="Volume da música" /> Volume da música <br>
+
+      <label for="qualidade-sobre">
+      <input type="checkbox" id="qualidade-sobre" name="qualidade-sobre" value="Estava tudo OK" /> Estava tudo OK <br>
+          
+    </fieldset>
+
+
+            
+            
+        
+        <p style="text-align: center;"><input type="datetime-local" name="datahora" id="datahora" value="" class="date-time" readonly></p>
+            
+        <button type="submit">Enviar</button>
+        <script src="script.js"></script>
+          
+    </form>
+</body>
+</html>
