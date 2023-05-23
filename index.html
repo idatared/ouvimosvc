@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>DoAlto - Questionário</title>
+</head>
+<body>
+    <form action="https://api.sheetmonkey.io/form/3BSDFpNRc1YuKib7gfR6pe" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="input-box">
+          <label>Nome:</label>
+          <input type="text" placeholder="Se preferir, digite seu nome" name="Nome" required/>
+          <label>Telefone:</label>
+          <input type="tel" placeholder="Se preferir, digite seu telefone" name="Telefone" />
+          <label>E-mail:</label>
+          <input type="email" placeholder="Se preferir, digite seu e-mail" name="Email"/>
+        </div>
+      </fieldset>
+        
+        <fieldset>
+          <legend>Avaliação</legend>
+          <label for="estrelas">Na sua percepção, qual a avaliação do restaurante?</label>
+          <div class="rate">
+            <input type="radio" id="star5_1" name="estrelas" value="5" />
+            <label for="star5_1" title="5 estrelas">★</label>
+            <input type="radio" id="star4_1" name="estrelas" value="4" />
+            <label for="star4_1" title="4 estrelas">★</label>
+            <input type="radio" id="star3_1" name="estrelas" value="3" />
+            <label for="star3_1" title="3 estrelas">★</label>
+            <input type="radio" id="star2_1" name="estrelas" value="2" />
+            <label for="star2_1" title="2 estrelas">★</label>
+            <input type="radio" id="star1_1" name="estrelas" value="1" />
+            <label for="star1_1" title="1 estrela">★</label>
+          </div> <br> <br>
+        </fieldset>
+
+
+      <!--  
+          <fieldset id="perguntas-adicionais-nome" style="display: none;">
+          <legend>titulo</legend>
+          <label for="qualidade-nome">texto pergunta?</label> 
+          <input type="checkbox" id="qualidade-nome" name="qualidade-nome" value="valor" /> valor 
+
+          <label for="qualidade-nome"> 
+          <input type="checkbox" id="qualidade-nome" name="qualidade-nome" value="valor" /> valor <br>
+
+          <label for="qualidade-nome"> 
+          <input type="checkbox" id="qualidade-nome" name="qualidade-nome" value="valor" /> valor <br>
+      
+          </fieldset>
+  -->  
+
+      <fieldset id="perguntas-adicionais-produto" style="display: none;">
+      <legend>Qualidade do produto</legend>
+      <label for="qualidade-produto">Você não gostou de algo no produto?</label> 
+      <input type="checkbox" id="qualidade-produto"name="qualidade-produto"value="Açai" /> Açai 
+
+      <label for="qualidade-produto"> 
+      <input type="checkbox" id="qualidade-produto" name="qualidade-produto" value="Sanduíche" /> Sanduíche <br>
+
+      <label for="qualidade-produto"> 
+      <input type="checkbox" id="qualidade-produto" name="qualidade-produto" value="Japonês" /> Japonês <br>
+      
+    </fieldset>
+
+    <fieldset id="perguntas-adicionais-ambiente" style="display: none;">
+      <legend>Ambiente</legend>
+      <label for="qualidade-ambiente">Algo haver com o ambiente?</label> 
+      <input type="checkbox" id="qualidade-ambiente" name="qualidade-ambiente" value="Cheio" /> Cheio <br>
+
+      <label for="qualidade-ambiente">
+      <input type="checkbox" id="qualidade-ambiente" name="qualidade-ambiente" value="Sujo" /> Sujo <br>
+
+      <label for="qualidade-ambiente">
+      <input type="checkbox" id="qualidade-ambiente" name="qualidade-ambiente" value="Feio" /> Feio <br>
+    </fieldset>
+
+    
+    <fieldset id="perguntas-adicionais-musica" style="display: none;">
+      <legend>Musica</legend>
+      <label for="qualidade-musica">Algo haver com musica?</label> 
+      <input type="checkbox" id="qualidade-musica" name="qualidade-musica" value="Cheio" /> Cheio <br>
+
+      <label for="qualidade-musica">
+      <input type="checkbox" id="qualidade-musica" name="qualidade-musica" value="Sujo" /> Sujo <br>
+
+      <label for="qualidade-musica">
+      <input type="checkbox" id="qualidade-musica" name="qualidade-musica" value="Feio" /> Feio <br>
+    </fieldset>
+            
+        
+        <p style="text-align: center;"><input type="datetime-local" name="datahora" id="datahora" value="" class="date-time" readonly></p>
+            
+        <button type="submit">Enviar</button>
+        <script src="script.js"></script>
+          
+    </form>
+</body>
+</html>
