@@ -3,15 +3,22 @@ document.addEventListener("DOMContentLoaded", function() {
   const rateInput = document.querySelectorAll('input[name^="estrelas"]');
   const fieldsetProduto = document.getElementById("perguntas-adicionais-produto");
   const fieldsetAmbiente = document.getElementById("perguntas-adicionais-ambiente");
+  const fieldsetAtendimento = document.getElementById("perguntas-adicionais-atendimento");
+  const fieldsetTempo = document.getElementById("perguntas-adicionais-tempo");
+  const fieldsetPreço = document.getElementById("perguntas-adicionais-preço");
+  const fieldsetSobre = document.getElementById("perguntas-adicionais-sobre");
+
   // const fieldsetNome = document.getElementById("perguntas-adicionais-Nome");
 
-  const fieldsetMusica = document.getElementById("perguntas-adicionais-musica");
+  
 
 
   const checkboxesProduto = fieldsetProduto.querySelectorAll('input[type="checkbox"]');
   const checkboxesAmbiente = fieldsetAmbiente.querySelectorAll('input[type="checkbox"]');
-
-  const checkboxesMusica = fieldsetMusica.querySelectorAll('input[type="checkbox"]');
+  const checkboxesAtendimento = fieldsetAtendimento.querySelectorAll('input[type="checkbox"]');
+  const checkboxesTempo = fieldsetTempo.querySelectorAll('input[type="checkbox"]');
+  const checkboxesPreço = fieldsetPreço.querySelectorAll('input[type="checkbox"]');
+  const checkboxesSobre = fieldsetSobre.querySelectorAll('input[type="checkbox"]');
 
   //const checkboxesNome = fieldsetNome.querySelectorAll('input[type="checkbox"]');
 
@@ -19,21 +26,30 @@ document.addEventListener("DOMContentLoaded", function() {
     input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name^="estrelas"]:checked').value);
 
-      if (selectedRating <= 3) {
+      if (selectedRating <= 4) {
         fieldsetProduto.style.display = "block";
         fieldsetAmbiente.style.display = "block";
-        fieldsetMusica.style.display = "block";
+        fieldsetAtendimento.style.display = "block";
+        fieldsetTempo.style.display = "block";
+        fieldsetPreço.style.display = "block";
+        fieldsetSobre.style.display = "block";
 
         // fieldsetNome.style.display = "block";
       } else {
         fieldsetProduto.style.display = "none";
         fieldsetAmbiente.style.display = "none";
-        fieldsetMusica.style.display = "none";
+        fieldsetAtendimento.style.display = "none";
+        fieldsetTempo.style.display = "none";
+        fieldsetPreço.style.display = "none";
+        fieldsetSobre.style.display = "none";
 
         // fieldsetNome.style.display = "none";
         uncheckCheckboxes(checkboxesProduto);
         uncheckCheckboxes(checkboxesAmbiente);
-        uncheckCheckboxes(checkboxesMusica);
+        uncheckCheckboxes(checkboxesAtendimento);
+        uncheckCheckboxes(checkboxesTempo);
+        uncheckCheckboxes(checkboxesPreço);
+        uncheckCheckboxes(checkboxesSobre);
 
         // uncheckCheckboxes(checkboxesNome);
       }
