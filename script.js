@@ -1,3 +1,8 @@
+document.querySelector('.estrela').addEventListener('click', function(event) {
+  event.preventDefault(); // Impede o comportamento padrão de retorno ao topo
+  // Restante do código para lidar com o clique na estrela
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   const rateInputProduto = document.querySelectorAll('input[name="estrelas-produto"]');
   const fieldsetProduto = document.getElementById("perguntas-adicionais-produto");
