@@ -9,6 +9,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'Nunito', sans-serif;
 }
 
 html {
@@ -26,8 +27,16 @@ form {
     padding: 10px 20px;
     background: #f4f7f8;
     border-radius: 6px;
+    color: rgba(42,4,78,1);
 }
-  
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}  
 .rate {
     float: left;
     height: 40px;
@@ -65,9 +74,15 @@ form {
   }
 
 h1 {
-    margin: 0 0 20px 0;
     text-align: center;
-
+    color: rgba(42,4,78,1);
+    
+}
+h2{
+    text-align: center;
+    color: rgba(42,4,78,1);
+    font-weight: 400;
+    
 }
 
 input[type="text"],
