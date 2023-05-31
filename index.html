@@ -15,6 +15,7 @@
     <form action="https://api.sheetmonkey.io/form/qxdNrBR5JGHGF223YZ5MTt" method="post">
       <img src="img/logoss.png" alt="Logo">
       <h2><em>Avalie sua experiência</em></h2>
+     
       <fieldset>
         <legend>Dados Pessoais</legend>
         <div class="input-box">
@@ -24,6 +25,16 @@
           <input type="tel" name="Telefone" />
           
         </div>
+      </fieldset>
+      <fieldset>
+        <label for="local">Escolha o estabelecimento em que se encontra:</label>
+              <select id="local" name="local" placeholder="Selecione um estabelecimento">
+        
+               <option value="" disabled selected>Selecione um estabelecimento</option>
+               <option value="Alphaville">Alphaville</option>
+               <option value="Ondina">Ondina</option>
+               <option value="Alto do Itaigara">Alto do Itaigara</option>
+              </select><br>
       </fieldset>
         
       <fieldset>
@@ -94,9 +105,6 @@
 
       <label for="qualidade-ambiente">
       <input type="checkbox" id="qualidade-ambiente" name="qualidade-ambiente" value="Banheiro desorganizado e sujo" /> Banheiro desorganizado e sujo <br>
-
-      <label for="qualidade-ambiente">
-      <input type="checkbox" id="qualidade-ambiente" name="qualidade-ambiente" value="Estava tudo OK" /> Estava tudo OK <br>
 
     </fieldset>
 
@@ -226,7 +234,7 @@
     </fieldset>
 
     <fieldset>
-      <label for="numero">Selecione um número de 0 a 10:</label>
+      <label for="numero">De 0 a 10, qual a probabilidade de você de indicar o Do Alto para um (a) amigo(a):</label>
       <input type="range" class="range-slider" id="numero" name="numero" min="0" max="10" step="1" oninput="exibirValorSelecionado()">
       <span id="valor-selecionado"></span>
       <span id="emoji"></span>
