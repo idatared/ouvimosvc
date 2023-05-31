@@ -63,27 +63,23 @@ form {
   .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
   }
-h1 {
-    margin: 0 0 5px 0;
-    text-align: center;
-}
 
-h2{
+h1 {
+    margin: 0 0 20px 0;
     text-align: center;
-    margin: 0 0 5px 0;
+
 }
 
 input[type="text"],
 input[type="number"],
-input[type="tel"],
-input[type="email"] {
+input[type="tel"] {
     background: rgba(255,255,255,0.1);
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     height: auto;
     margin: 0;
     outline: 0;
-    padding: 15px;
+    padding: 12px;
     width: 90%;
     background-color: #e8eeef;
     color: #8a97a0;
@@ -95,6 +91,7 @@ input[type="radio"],
 input[type="checkbox"] {
     margin: 0 4px 8px 0;
 }
+
 .number {
     background-color: rgba(97,8,191,1);
     color: #fff;
@@ -148,10 +145,30 @@ label {
 .footer{
     color: #ffffff; font-size: 15px; text-align: center;
 }
-  
+
+
 @media screen and (min-width: 480px) {
   
     form {
-      max-width: 480px;
+      max-width: 600px;
     }
+    
 }
+
+@media screen and (max-width: 380px) {
+  
+    
+
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"] {
+        font-size: 12px;
+        
+    }
+
+    button {
+        margin-left: 30px;
+    }
+
+    
+} 
