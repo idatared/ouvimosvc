@@ -140,9 +140,15 @@ label {
 #valor-selecionado {
     font-weight: bold;
     display: inline-block;
+    font-size: 22px;
 }
+
+input[type="range"] {
+    width: 300px;
+}
+
 #emoji {
-    font-size: 30px;
+    font-size: 45px;
     margin-left: 10px;
     display: inline-block;
 }
