@@ -126,6 +126,43 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+function exibirValorSelecionado() {
+  var range = document.getElementById("numero");
+  var valorSelecionado = document.getElementById("valor-selecionado");
+  var emoji = document.getElementById("emoji");
+
+  var valor = range.value;
+  valorSelecionado.innerHTML = valor;
+  if (valor == 0){
+    emoji.innerHTML = "😡";
+  }
+    else if (valor == 1 ) {
+      emoji.innerHTML = "😠"; 
+  } else if (valor == 2 ) {
+      emoji.innerHTML = "😢";    
+  } else if (valor == 3 ) {
+    emoji.innerHTML = "😕";  
+  }else if (valor == 4){
+      emoji.innerHTML = "🫤"; 
+  } else if (valor == 5){
+    emoji.innerHTML = "😐";
+  }
+  else if (valor == 6){
+    emoji.innerHTML = "🙂";
+  }
+  else if (valor == 7){
+    emoji.innerHTML = "😊";
+  }
+  else if (valor == 8){
+    emoji.innerHTML = "😃";
+  }
+  else if (valor == 9){
+    emoji.innerHTML = "😍";
+  }
+  else if (valor == 10){
+    emoji.innerHTML = "🥳";
+  } 
+}
 // Obtém o elemento de entrada
 const input = document.querySelector("#datahora");
 

@@ -9,14 +9,16 @@
     <title>DoAlto - Questionário</title>
 </head>
 <body>
+    
     <form action="https://api.sheetmonkey.io/form/qxdNrBR5JGHGF223YZ5MTt" method="post">
       <fieldset>
         <legend>Dados Pessoais</legend>
         <div class="input-box">
           <label>Nome:</label>
-          <input type="text" name="Nome" required/>
+          <input type="text"  name="Nome" required/>
           <label>Telefone:</label>
-          <input type="tel" name="Telefone" />          
+          <input type="tel" name="Telefone" />
+          
         </div>
       </fieldset>
         
@@ -220,61 +222,25 @@
     </fieldset>
 
     <fieldset>
-      <label for="estrelas-nota">De 0 a 10, qual é a probabilidade de você indicar o Do Alto para um(a) amigo(a)?</label>
-      <div class="rate">
-
-        <input type="radio" id="star10_nota" name="estrelas-nota" value="10" />
-        <label for="star10_nota" title="10 estrelas">★</label>
-
-        <input type="radio" id="star9_nota" name="estrelas-nota" value="9" />
-        <label for="star9_nota" title="9 estrelas">★</label>
-
-        <input type="radio" id="star8_nota" name="estrelas-nota" value="8" />
-        <label for="star8_nota" title="8 estrelas">★</label>
-
-        <input type="radio" id="star7_nota" name="estrelas-nota" value="7" />
-        <label for="star7_nota" title="7 estrelas">★</label>
-
-        <input type="radio" id="star6_nota" name="estrelas-nota" value="5" />
-        <label for="star6_nota" title="6 estrelas">★</label>
-
-        <input type="radio" id="star5_nota" name="estrelas-nota" value="5" />
-        <label for="star5_nota" title="5 estrelas">★</label>
-
-        <input type="radio" id="star4_nota" name="estrelas-nota" value="4" />
-        <label for="star4_nota" title="4 estrelas">★</label>
-
-        <input type="radio" id="star3_nota" name="estrelas-nota" value="3" />
-        <label for="star3_nota" title="3 estrelas">★</label>
-
-        <input type="radio" id="star2_nota" name="estrelas-nota" value="2" />
-        <label for="star2_nota" title="2 estrelas">★</label>
-        
-        <input type="radio" id="star1_nota" name="estrelas-nota" value="1" />
-        <label for="star1_nota" title="1 estrela">★</label>
-      </div> <br> <br>
+      <label for="numero">Selecione um número de 0 a 10:</label>
+      <input type="range" id="numero" name="numero" min="0" max="10" step="1" onchange="exibirValorSelecionado()">
+      <span id="valor-selecionado"></span>
+      <span id="emoji"></span>
     </fieldset>
 
-
+   
     <fieldset>
-      <legend>Comentários gerais:</legend>                           
-                       
-      </div>
+      <legend>Comentários gerais:</legend>
       <div class="row">
-          <textarea name="Opinião" id="opinião" cols="35" rows="5" placeholder="Pontos positivos ou negativos que queira destacar"
+          <textarea name="Opinião" id="opinião" cols="35" rows="5" placeholder="Pontos positivos ou negativos que queira destacar!"
           autocomplete="off"></textarea>
           
       </div> 
   </fieldset>
-
-
+      <p style="text-align: center;"><input type="datetime-local" name="datahora" id="datahora" value="" class="date-time" readonly></p>
             
-            
-        
-        <p style="text-align: center;"><input type="datetime-local" name="datahora" id="datahora" value="" class="date-time" readonly></p>
-            
-        <button type="submit">Enviar</button>
-        <script src="script.js"></script>
+      <button type="submit">Enviar</button>
+      <script src="script.js"></script>
           
     </form>
 </body>

@@ -136,7 +136,29 @@ label {
     display: block;
     margin-bottom: 10px;
 }
-  
+
+#valor-selecionado {
+    font-weight: bold;
+    display: inline-block;
+}
+#emoji {
+    font-size: 30px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+textarea{
+    border: 1px solid black;
+    font-size:14px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 12px;
+    width: 90%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    margin-bottom: 30px;
+}
 .date-time{
     border: none;
     text-align: center;
@@ -150,14 +172,16 @@ label {
 @media screen and (min-width: 480px) {
   
     form {
-      max-width: 600px;
+      max-width: 500px;
     }
     
 }
 
 @media screen and (max-width: 380px) {
   
-    
+    form {
+        max-width: 320px;
+      }
 
     input[type="text"],
     input[type="number"],
