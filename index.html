@@ -223,11 +223,11 @@
 
     <fieldset>
       <label for="numero">Selecione um número de 0 a 10:</label>
-      <input type="range" class="range-slider" id="numero" name="numero" min="0" max="10" step="1" onchange="exibirValorSelecionado()">
+      <input type="range" class="range-slider" id="numero" name="numero" min="0" max="10" step="1" oninput="exibirValorSelecionado()">
       <span id="valor-selecionado"></span>
       <span id="emoji"></span>
     </fieldset>
-
+    
    
     <fieldset>
       <legend>Comentários gerais:</legend>

@@ -133,35 +133,22 @@ function exibirValorSelecionado() {
 
   var valor = range.value;
   valorSelecionado.innerHTML = valor;
-  if (valor == 0){
-    emoji.innerHTML = "😡";
-  }
-    else if (valor == 1 ) {
-      emoji.innerHTML = "😠"; 
-  } else if (valor == 2 ) {
-      emoji.innerHTML = "😢";    
-  } else if (valor == 3 ) {
-    emoji.innerHTML = "😕";  
-  }else if (valor == 4){
-      emoji.innerHTML = "🫤"; 
-  } else if (valor == 5){
-    emoji.innerHTML = "😐";
-  }
-  else if (valor == 6){
-    emoji.innerHTML = "🙂";
-  }
-  else if (valor == 7){
-    emoji.innerHTML = "😊";
-  }
-  else if (valor == 8){
-    emoji.innerHTML = "😃";
-  }
-  else if (valor == 9){
-    emoji.innerHTML = "😍";
-  }
-  else if (valor == 10){
-    emoji.innerHTML = "🥳";
-  } 
+
+  var emojis = {
+    0: "😡",
+    1: "😠",
+    2: "😢",
+    3: "😕",
+    4: "🫤",
+    5: "😐",
+    6: "🙂",
+    7: "😊",
+    8: "😃",
+    9: "😍",
+    10: "🥳"
+  };
+
+  emoji.innerHTML = emojis[valor];
 }
 // Obtém o elemento de entrada
 const input = document.querySelector("#datahora");
