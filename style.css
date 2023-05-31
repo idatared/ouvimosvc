@@ -140,7 +140,7 @@ label {
 #valor-selecionado {
     font-weight: bold;
     display: inline-block;
-    font-size: 40px;
+    font-size: 35px;
     color: rgba(42,4,78,1);
     margin-left: 5px;
 }
@@ -167,8 +167,8 @@ label {
   
 
 #emoji {
-    font-size: 45px;
-    margin-left: 10px;
+    font-size: 40px;
+    margin-left: 5px;
     display: inline-block;
 }
 
