@@ -1,3 +1,16 @@
+const rateInputs = document.querySelectorAll('input[type="radio"]');
+rateInputs.forEach(function(input) {
+  if ('ontouchstart' in window) {
+    input.addEventListener("click", function(event) {
+      event.stopPropagation();
+    });
+  } else {
+    input.addEventListener("touchstart", function(event) {
+      event.stopPropagation();
+    });
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   const rateInputProduto = document.querySelectorAll('input[name="estrelas-produto"]');
   const fieldsetProduto = document.getElementById("perguntas-adicionais-produto");
@@ -28,20 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const checkboxesTempo = fieldsetTempo.querySelectorAll('input[type="checkbox"]');
   const checkboxesPreço = fieldsetPreço.querySelectorAll('input[type="checkbox"]');
   const checkboxesSobre = fieldsetSobre.querySelectorAll('input[type="checkbox"]');
-
-
-  const rateInputs = document.querySelectorAll('input[type="radio"]');
-rateInputs.forEach(function(input) {
-    if ('ontouchstart' in window) {
-        input.addEventListener("click", function(event) {
-            event.stopPropagation();
-        });
-    } else {
-        input.addEventListener("touchstart", function(event) {
-            event.stopPropagation();
-        });
-    }
-});
 
 
 
