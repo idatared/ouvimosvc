@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const checkboxesSobre = fieldsetSobre.querySelectorAll('input[type="checkbox"]');
 
 
- 
+
   
 
   rateInputProduto.forEach(function(input) {
@@ -43,10 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-
-
   rateInputAmbiente.forEach(function(input) {
-     input.addEventListener("change", function() {
+    input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-ambiente"]:checked').value);
 
       if (selectedRating <= 3) {
@@ -59,11 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  
-  
-  
   rateInputAtendimento.forEach(function(input) {
-     input.addEventListener("change", function() {
+    input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-atendimento"]:checked').value);
 
       if (selectedRating <= 3) {
@@ -76,10 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-
-  
-  
-    rateInputTempo.forEach(function(input) {
+  rateInputTempo.forEach(function(input) {
     input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-tempo"]:checked').value);
 
@@ -93,12 +85,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-
-  
-  
-  
-   rateInputPreço.forEach(function(input) {
-     input.addEventListener("change", function() {
+  rateInputPreço.forEach(function(input) {
+    input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-preço"]:checked').value);
 
       if (selectedRating <= 3) {
@@ -111,13 +99,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
- 
-   
-  
-  
-  
   rateInputSobre.forEach(function(input) {
-     input.addEventListener("change", function() {
+    input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-sobre"]:checked').value);
 
       if (selectedRating <= 3) {
