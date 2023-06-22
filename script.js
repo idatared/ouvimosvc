@@ -151,6 +151,17 @@ function exibirValorSelecionado() {
   emoji.innerHTML = emojis[valor];
 }
 
+// Impede a rolagem da página em dispositivos móveis ao clicar nas estrelas
+const starLinks = document.querySelectorAll('label[for^="star"]');
+starLinks.forEach(function(link) {
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+  });
+
+  link.addEventListener("touchstart", function(event) {
+    event.stopPropagation();
+  });
+});
 
 
 
