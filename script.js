@@ -30,6 +30,18 @@ document.addEventListener("DOMContentLoaded", function() {
   const checkboxesSobre = fieldsetSobre.querySelectorAll('input[type="checkbox"]');
 
 
+  const rateInputs = document.querySelectorAll('input[type="radio"]');
+rateInputs.forEach(function(input) {
+    if ('ontouchstart' in window) {
+        input.addEventListener("click", function(event) {
+            event.stopPropagation();
+        });
+    } else {
+        input.addEventListener("touchstart", function(event) {
+            event.stopPropagation();
+        });
+    }
+});
 
 
 
