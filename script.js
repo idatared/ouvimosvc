@@ -175,3 +175,11 @@ const currentDateString = now.toISOString().slice(0, 10);
 
 // Atribui a data e hora ao elemento de entrada
 input.value = `${currentDateString}T${currentTimeString}`;
+
+// Impede a rolagem da página em dispositivos móveis ao clicar nas estrelas
+const rateInputs = document.querySelectorAll('input[type="radio"]');
+rateInputs.forEach(function(input) {
+  input.addEventListener("touchstart", function(event) {
+    event.stopPropagation();
+  });
+});
