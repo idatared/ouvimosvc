@@ -158,9 +158,13 @@ rateInputs.forEach(function(input) {
     event.stopPropagation();
   });
 
+  input.addEventListener("touchmove", function(event) {
+    event.preventDefault();
+  });
+
   input.parentNode.style.touchAction = "manipulation";
 });
-
+ 
 
 
 
