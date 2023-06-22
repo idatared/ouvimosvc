@@ -26,15 +26,11 @@ document.addEventListener("DOMContentLoaded", function() {
   const checkboxesSobre = fieldsetSobre.querySelectorAll('input[type="checkbox"]');
 
 
- rateInputProduto.forEach(function(input) {
-    input.addEventListener("click", function(event) {
-      event.preventDefault();
- //   const selectedRating = parseInt(document.querySelector('input[name="estrelas-produto"]:checked').value);
-  
+ 
   
 
-//  rateInputProduto.forEach(function(input) {
-//    input.addEventListener("change", function() {
+  rateInputProduto.forEach(function(input) {
+    input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-produto"]:checked').value);
 
       if (selectedRating <= 3) {
@@ -48,12 +44,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-rateInputAmbiente.forEach(function(input) {
-    input.addEventListener("click", function(event) {
-      event.preventDefault();
-  
-  // rateInputAmbiente.forEach(function(input) {
-  //   input.addEventListener("change", function() {
+
+  rateInputAmbiente.forEach(function(input) {
+     input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-ambiente"]:checked').value);
 
       if (selectedRating <= 3) {
@@ -66,13 +59,11 @@ rateInputAmbiente.forEach(function(input) {
     });
   });
 
+  
+  
+  
   rateInputAtendimento.forEach(function(input) {
-    input.addEventListener("click", function(event) {
-      event.preventDefault();
-  
-  
-  // rateInputAtendimento.forEach(function(input) {
- //     input.addEventListener("change", function() {
+     input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-atendimento"]:checked').value);
 
       if (selectedRating <= 3) {
@@ -85,13 +76,11 @@ rateInputAmbiente.forEach(function(input) {
     });
   });
 
-rateInputTempo.forEach(function(input) {
-    input.addEventListener("click", function(event) {
-      event.preventDefault();
+
   
   
-  //  rateInputTempo.forEach(function(input) {
-  //   input.addEventListener("change", function() {
+    rateInputTempo.forEach(function(input) {
+    input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-tempo"]:checked').value);
 
       if (selectedRating <= 3) {
@@ -105,13 +94,11 @@ rateInputTempo.forEach(function(input) {
   });
 
 
+  
+  
+  
    rateInputPreço.forEach(function(input) {
-    input.addEventListener("click", function(event) {
-      event.preventDefault();
-  
-  
-  //  rateInputPreço.forEach(function(input) {
-  //   input.addEventListener("change", function() {
+     input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-preço"]:checked').value);
 
       if (selectedRating <= 3) {
@@ -125,14 +112,12 @@ rateInputTempo.forEach(function(input) {
   });
 
  
-   rateInputSobre.forEach(function(input) {
-    input.addEventListener("click", function(event) {
-      event.preventDefault();
+   
   
   
   
-  // rateInputSobre.forEach(function(input) {
- //    input.addEventListener("change", function() {
+  rateInputSobre.forEach(function(input) {
+     input.addEventListener("change", function() {
       const selectedRating = parseInt(document.querySelector('input[name="estrelas-sobre"]:checked').value);
 
       if (selectedRating <= 3) {
