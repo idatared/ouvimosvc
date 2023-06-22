@@ -209,6 +209,17 @@ textarea{
     color: #ffffff; font-size: 15px; text-align: center;
 }
 
+* Impede a rolagem da página em dispositivos móveis ao clicar nas estrelas */
+@media (max-width: 768px) {
+    input[type="radio"][name^="estrelas"] {
+        touch-action: manipulation;
+    }
+}
+
+
+
+
+
 
 @media screen and (min-width: 480px) {
   
